@@ -14,7 +14,7 @@ times is that getting to the right link quickly is a pain in the
 REDACTED.
 
 The goal of `helpdesk` is to create a simple api to query URL links
-embedded in DESCRPITION files of the `installed.packages` and return an
+embedded in DESCRPITION files of the `installed.packages` and return a
 search enabled datatable with active links of the relevant URLs.
 
 ## Installation
