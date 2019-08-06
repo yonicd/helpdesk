@@ -1,0 +1,76 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+# helpdesk
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of helpdesk is to create a quick api to query URL links embedded in DESCRPITION files of the `installed.packages`.
+
+## Installation
+
+``` r
+remotes::install_github("yonicd/helpdesk")
+```
+
+## Example
+
+```{r example}
+library(helpdesk)
+```
+
+### Interactive
+
+In RStudio IDE an interactive [datatable](https://rstudio.github.io/DT/) will be returned in which search fields at the top of the columns is enabled by default to further query the output. 
+
+After locating the relevant link you need, the links are enabled to open directly into a new browser tab.
+
+Here is an example
+
+![](helpdesk.gif)
+
+That's it!
+
+### Static
+
+Below shows some additional functionality, where the returned objects are converted to htm tables. Like before the links are active so you can test them out from the outputs.
+
+#### Default
+
+returns a table of all the packages with URLs in the DESCRIPTION file
+
+```{r}
+x <- help.pages()
+nrow(x)
+knitr::kable(head(x))
+```
+
+#### Subset of packages
+
+```{r}
+knitr::kable(help.pages(c('dplyr','ggplot2')))
+```
+
+#### Using partial matches of package names
+
+```{r}
+knitr::kable(help.pages('tidy',regex = TRUE))
+```
+
+#### Using partial matches of function names in the help title field
+
+```{r}
+knitr::kable(help.pages(function_pattern = 'geom'))
+```
