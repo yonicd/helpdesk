@@ -35,7 +35,7 @@ library(helpdesk)
 
 In RStudio IDE an interactive [datatable](https://rstudio.github.io/DT/) will be returned in which search fields at the top of the columns is enabled by default to further query the output. 
 
-After locating the relevant link you need, the links are enabled to open directly into a new browser tab.
+After locating the relevant link you need, the links are enabled to open directly into a new browser tab. 
 
 Here is an example
 

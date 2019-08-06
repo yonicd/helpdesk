@@ -40,7 +40,8 @@ That’s it\!
 ### Static
 
 Below shows some additional functionality, where the returned objects
-are converted to htm tables.
+are converted to htm tables. Like before the links are active so you can
+test them out from the outputs.
 
 #### Default
 
