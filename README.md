@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# helpdesk
+# helpdesk <img src="https://github.com/yonicd/helpdesk/raw/master/input/logo.png" align="right" />
 
 <!-- badges: start -->
 
@@ -65,7 +65,7 @@ returns a table of all the packages with URLs in the DESCRIPTION file
 ``` r
 x <- help.pages()
 nrow(x)
-#> [1] 232
+#> [1] 237
 knitr::kable(head(x))
 ```
 
@@ -109,12 +109,14 @@ knitr::kable(help.pages(function_pattern = 'geom'))
 
 | Package | URL                                                                                                                                                                                                                                                                |
 | :------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| bunny   | <a href="https://github.com/dmi3kno/bunny" target="_blank">https://github.com/dmi3kno/bunny</a>                                                                                                                                                                    |
 | GGally  | <a href="https://ggobi.github.io/ggally" target="_blank">https://ggobi.github.io/ggally</a><br><a href="https://github.com/ggobi/ggally" target="_blank">https://github.com/ggobi/ggally</a>                                                                       |
+| ggforce | <a href="https://ggforce.data-imaginist.com" target="_blank">https://ggforce.data-imaginist.com</a>                                                                                                                                                                |
 | ggplot2 | <a href="http://ggplot2.tidyverse.org" target="_blank">http://ggplot2.tidyverse.org</a><br><a href="https://github.com/tidyverse/ggplot2" target="_blank">https://github.com/tidyverse/ggplot2</a>                                                                 |
 | ggpubr  | <a href="https://rpkgs.datanovia.com/ggpubr/" target="_blank">https://rpkgs.datanovia.com/ggpubr/</a>                                                                                                                                                              |
 | ggrepel | <a href="http://github.com/slowkow/ggrepel" target="_blank">http://github.com/slowkow/ggrepel</a>                                                                                                                                                                  |
 | igraph  | <a href="http://igraph.org" target="_blank">http://igraph.org</a>                                                                                                                                                                                                  |
-| magick  | <a href="https://github.com/ropensci/magick#readme" target="_blank">https://github.com/ropensci/magick\#readme</a>                                                                                                                                                 |
+| magick  | <a href="https://docs.ropensci.org/magick" target="_blank">https://docs.ropensci.org/magick</a><br><a href="https://github.com/ropensci/magick" target="_blank">https://github.com/ropensci/magick</a>                                                             |
 | MASS    | <a href="http://www.stats.ox.ac.uk/pub/MASS4/" target="_blank">http://www.stats.ox.ac.uk/pub/MASS4/</a>                                                                                                                                                            |
 | plotly  | <a href="https://plotly-r.com" target="_blank">https://plotly-r.com</a><br><a href="https://github.com/ropensci/plotly#readme" target="_blank">https://github.com/ropensci/plotly\#readme</a><br><a href="https://plot.ly/r" target="_blank">https://plot.ly/r</a> |
 | psych   | <a href="https://personality-project.org/r/psych" target="_blank">https://personality-project.org/r/psych</a><br><a href="https://personality-project.org/r/psych-manual.pdf" target="_blank">https://personality-project.org/r/psych-manual.pdf</a>               |

@@ -12,7 +12,9 @@ knitr::opts_chunk$set(
   out.width = "100%"
 )
 ```
-# helpdesk
+
+# helpdesk `r if(knitr::opts_knit$get('rmarkdown.pandoc.to')=='gfm-ascii_identifiers') '<img src="https://github.com/yonicd/helpdesk/raw/master/input/logo.png" align="right" />'`
+
 
 <!-- badges: start -->
 [![stability-experimental](https://img.shields.io/badge/stability-experimental-orange.svg)]()
