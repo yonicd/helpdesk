@@ -91,21 +91,24 @@
 <p>In RStudio IDE an interactive <a href="https://rstudio.github.io/DT/">datatable</a> will be returned in which search fields at the top of the columns is enabled by default to further query the output.</p>
 <p>After locating the relevant link you need, the links are enabled to open directly into a new browser tab.</p>
 <p>Here is an example</p>
+<p>Running in the console the default call</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" title="1"><span class="kw"><a href="reference/help.pages.html">help.pages</a></span>()</a></code></pre></div>
+<p>The resulting <code>datatable</code> is returned</p>
 <p><img src="helpdesk.gif"></p>
 <p>That’s it!</p>
 </div>
 <div id="static" class="section level3">
 <h3 class="hasAnchor">
 <a href="#static" class="anchor"></a>Static</h3>
-<p>Below shows some additional functionality, where the returned objects are converted to htm tables. Like before the links are active so you can test them out from the outputs.</p>
+<p>Below shows some additional functionality, where the returned objects are converted to html tables. Like before the links are active so you can test them out from the outputs.</p>
 <div id="default" class="section level4">
 <h4 class="hasAnchor">
 <a href="#default" class="anchor"></a>Default</h4>
 <p>returns a table of all the packages with URLs in the DESCRIPTION file</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" title="1">x &lt;-<span class="st"> </span><span class="kw"><a href="reference/help.pages.html">help.pages</a></span>()</a>
-<a class="sourceLine" id="cb3-2" title="2"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/nrow">nrow</a></span>(x)</a>
-<a class="sourceLine" id="cb3-3" title="3"><span class="co">#&gt; [1] 232</span></a>
-<a class="sourceLine" id="cb3-4" title="4">knitr<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/knitr/topics/kable">kable</a></span>(<span class="kw"><a href="https://www.rdocumentation.org/packages/utils/topics/head">head</a></span>(x))</a></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" title="1">x &lt;-<span class="st"> </span><span class="kw"><a href="reference/help.pages.html">help.pages</a></span>()</a>
+<a class="sourceLine" id="cb4-2" title="2"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/nrow">nrow</a></span>(x)</a>
+<a class="sourceLine" id="cb4-3" title="3"><span class="co">#&gt; [1] 232</span></a>
+<a class="sourceLine" id="cb4-4" title="4">knitr<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/knitr/topics/kable">kable</a></span>(<span class="kw"><a href="https://www.rdocumentation.org/packages/utils/topics/head">head</a></span>(x))</a></code></pre></div>
 <table class="table table">
 <thead><tr class="header">
 <th align="left">Package</th>
@@ -144,7 +147,7 @@
 <div id="subset-of-packages" class="section level4">
 <h4 class="hasAnchor">
 <a href="#subset-of-packages" class="anchor"></a>Subset of packages</h4>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" title="1">knitr<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/knitr/topics/kable">kable</a></span>(<span class="kw"><a href="reference/help.pages.html">help.pages</a></span>(<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/c">c</a></span>(<span class="st">'dplyr'</span>,<span class="st">'ggplot2'</span>)))</a></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" title="1">knitr<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/knitr/topics/kable">kable</a></span>(<span class="kw"><a href="reference/help.pages.html">help.pages</a></span>(<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/c">c</a></span>(<span class="st">'dplyr'</span>,<span class="st">'ggplot2'</span>)))</a></code></pre></div>
 <table class="table table">
 <thead><tr class="header">
 <th align="left">Package</th>
@@ -169,7 +172,7 @@
 <div id="using-partial-matches-of-package-names" class="section level4">
 <h4 class="hasAnchor">
 <a href="#using-partial-matches-of-package-names" class="anchor"></a>Using partial matches of package names</h4>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" title="1">knitr<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/knitr/topics/kable">kable</a></span>(<span class="kw"><a href="reference/help.pages.html">help.pages</a></span>(<span class="st">'tidy'</span>,<span class="dt">regex =</span> <span class="ot">TRUE</span>))</a></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" title="1">knitr<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/knitr/topics/kable">kable</a></span>(<span class="kw"><a href="reference/help.pages.html">help.pages</a></span>(<span class="st">'tidy'</span>,<span class="dt">regex =</span> <span class="ot">TRUE</span>))</a></code></pre></div>
 <table class="table table">
 <thead><tr class="header">
 <th align="left">Package</th>
@@ -196,7 +199,7 @@
 <div id="using-partial-matches-of-function-names-in-the-help-title-field" class="section level4">
 <h4 class="hasAnchor">
 <a href="#using-partial-matches-of-function-names-in-the-help-title-field" class="anchor"></a>Using partial matches of function names in the help title field</h4>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" title="1">knitr<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/knitr/topics/kable">kable</a></span>(<span class="kw"><a href="reference/help.pages.html">help.pages</a></span>(<span class="dt">function_pattern =</span> <span class="st">'geom'</span>))</a></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb7-1" title="1">knitr<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/knitr/topics/kable">kable</a></span>(<span class="kw"><a href="reference/help.pages.html">help.pages</a></span>(<span class="dt">function_pattern =</span> <span class="st">'geom'</span>))</a></code></pre></div>
 <table class="table table">
 <thead><tr class="header">
 <th align="left">Package</th>

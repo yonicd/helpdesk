@@ -34,6 +34,14 @@ directly into a new browser tab.
 
 Here is an example
 
+Running in the console the default call
+
+``` r
+help.pages()
+```
+
+The resulting `datatable` is returned
+
 ![](docs/helpdesk.gif)
 
 That’s it\!
@@ -41,8 +49,8 @@ That’s it\!
 ### Static
 
 Below shows some additional functionality, where the returned objects
-are converted to htm tables. Like before the links are active so you can
-test them out from the outputs.
+are converted to html tables. Like before the links are active so you
+can test them out from the outputs.
 
 #### Default
 
