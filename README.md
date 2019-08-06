@@ -8,8 +8,14 @@
 [![stability-experimental](https://img.shields.io/badge/stability-experimental-orange.svg)]()
 <!-- badges: end -->
 
-The goal of `helpdesk` is to create a quick api to query URL links
-embedded in DESCRPITION files of the `installed.packages`.
+Embedded in the DESCRIPTION files of our installed.packages is a world
+of URLs developers have curated for us to learn from. The problem many
+times is that getting to the right link quickly is a pain in the
+REDACTED.
+
+The goal of `helpdesk` is to create a simple api to query URL links
+embedded in DESCRPITION files of the `installed.packages` and return an
+search enabled datatable with active links of the relevant URLs.
 
 ## Installation
 
