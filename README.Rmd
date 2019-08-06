@@ -15,9 +15,10 @@ knitr::opts_chunk$set(
 # helpdesk
 
 <!-- badges: start -->
+[![stability-experimental](https://img.shields.io/badge/stability-experimental-orange.svg)]()
 <!-- badges: end -->
 
-The goal of helpdesk is to create a quick api to query URL links embedded in DESCRPITION files of the `installed.packages`.
+The goal of `helpdesk` is to create a quick api to query URL links embedded in DESCRPITION files of the `installed.packages`.
 
 ## Installation
 
@@ -39,7 +40,7 @@ After locating the relevant link you need, the links are enabled to open directl
 
 Here is an example
 
-![](helpdesk.gif)
+![](docs/helpdesk.gif)
 
 That's it!
 

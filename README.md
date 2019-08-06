@@ -5,9 +5,10 @@
 
 <!-- badges: start -->
 
+[![stability-experimental](https://img.shields.io/badge/stability-experimental-orange.svg)]()
 <!-- badges: end -->
 
-The goal of helpdesk is to create a quick api to query URL links
+The goal of `helpdesk` is to create a quick api to query URL links
 embedded in DESCRPITION files of the `installed.packages`.
 
 ## Installation
@@ -33,7 +34,7 @@ directly into a new browser tab.
 
 Here is an example
 
-![](helpdesk.gif)
+![](docs/helpdesk.gif)
 
 That’s it\!
 
@@ -50,18 +51,18 @@ returns a table of all the packages with URLs in the DESCRIPTION file
 ``` r
 x <- help.pages()
 nrow(x)
-#> [1] 231
+#> [1] 232
 knitr::kable(head(x))
 ```
 
 | Package     | URL                                                                                                                                                                                          |
 | :---------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| helpdesk    | <a href="https://github.com/yonicd/helpdesk" target="_blank">https://github.com/yonicd/helpdesk</a>                                                                                          |
 | BayesFactor | <a href="https://richarddmorey.github.io/BayesFactor/" target="_blank">https://richarddmorey.github.io/BayesFactor/</a>                                                                      |
 | Brobdingnag | <a href="https://github.com/RobinHankin/Brobdingnag.git" target="_blank">https://github.com/RobinHankin/Brobdingnag.git</a>                                                                  |
 | DT          | <a href="https://rstudio.github.io/DT" target="_blank">https://rstudio.github.io/DT</a>                                                                                                      |
 | GGally      | <a href="https://ggobi.github.io/ggally" target="_blank">https://ggobi.github.io/ggally</a><br><a href="https://github.com/ggobi/ggally" target="_blank">https://github.com/ggobi/ggally</a> |
 | MASS        | <a href="http://www.stats.ox.ac.uk/pub/MASS4/" target="_blank">http://www.stats.ox.ac.uk/pub/MASS4/</a>                                                                                      |
-| Matrix      | <a href="http://Matrix.R-forge.R-project.org/" target="_blank">http://Matrix.R-forge.R-project.org/</a>                                                                                      |
 
 #### Subset of packages
 

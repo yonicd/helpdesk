@@ -6,6 +6,8 @@ Description: Query URL links referenced in the DESCRIPTION file of installed
         packages.
 Authors@R: person(given = "Jonathan", family = "Sidi", role = c("cre",'aut'),
         email = "yonicd@gmail.com")
+URL: https://github.com/yonicd/helpdesk
+BugReports: https://github.com/yonicd/helpdesk/issues
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
