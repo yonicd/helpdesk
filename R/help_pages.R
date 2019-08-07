@@ -35,11 +35,13 @@
 #' @importFrom stats setNames
 #' @importFrom desc desc_get_urls
 help.pages <- function(
-  package = full_stack,
+  package = get_installed(),
   function_pattern = NULL,
   regex = FALSE,
   DT_args = list(options = list(paging=FALSE,dom='t'))
   ){
+
+  full_stack <- get_installed()
 
   if(regex&!missing(package)){
     package <- grep(package,full_stack,value=TRUE)

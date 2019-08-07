@@ -4,7 +4,7 @@
 \alias{help.pages}
 \title{Locate URL links of Installed Packages}
 \usage{
-help.pages(package = full_stack, function_pattern = NULL,
+help.pages(package = get_installed(), function_pattern = NULL,
   regex = FALSE, DT_args = list(options = list(paging = FALSE, dom =
   "t")))
 }

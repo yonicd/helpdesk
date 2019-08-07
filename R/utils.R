@@ -21,3 +21,28 @@ find.function <- function(pattern){
 
 }
 
+#' @importFrom utils installed.packages getFromNamespace
+fetch_installed <- function(paths = .libPaths(),
+                            env = utils::getFromNamespace('helpenv',ns = 'helpdesk')
+                            ){
+
+  env$full_stack <- unique(rownames(utils::installed.packages(lib.loc = paths)))
+
+}
+
+
+#' @title Return names of installed packages
+#' @description Returns the names of installed.packages found within the
+#' location of R library trees that installed.packages searches through.
+#' @return character
+#' @examples
+#' x <- get_installed()
+#' nrow(x)
+#' head(x)
+#' @rdname get_installed
+#' @export
+get_installed <- function(){
+
+  helpenv$full_stack
+
+}

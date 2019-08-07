@@ -69,14 +69,14 @@ nrow(x)
 knitr::kable(head(x))
 ```
 
-| Package     | URL                                                                                                                                                                                          |
-| :---------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| helpdesk    | <a href="https://github.com/yonicd/helpdesk" target="_blank">https://github.com/yonicd/helpdesk</a>                                                                                          |
-| BayesFactor | <a href="https://richarddmorey.github.io/BayesFactor/" target="_blank">https://richarddmorey.github.io/BayesFactor/</a>                                                                      |
-| Brobdingnag | <a href="https://github.com/RobinHankin/Brobdingnag.git" target="_blank">https://github.com/RobinHankin/Brobdingnag.git</a>                                                                  |
-| DT          | <a href="https://rstudio.github.io/DT" target="_blank">https://rstudio.github.io/DT</a>                                                                                                      |
-| GGally      | <a href="https://ggobi.github.io/ggally" target="_blank">https://ggobi.github.io/ggally</a><br><a href="https://github.com/ggobi/ggally" target="_blank">https://github.com/ggobi/ggally</a> |
-| MASS        | <a href="http://www.stats.ox.ac.uk/pub/MASS4/" target="_blank">http://www.stats.ox.ac.uk/pub/MASS4/</a>                                                                                      |
+| Package     | URL                                                                                                                         |
+| :---------- | :-------------------------------------------------------------------------------------------------------------------------- |
+| anytime     | <a href="http://dirk.eddelbuettel.com/code/anytime.html" target="_blank">http://dirk.eddelbuettel.com/code/anytime.html</a> |
+| argparser   | <a href="https://bitbucket.org/djhshih/argparser" target="_blank">https://bitbucket.org/djhshih/argparser</a>               |
+| askpass     | <a href="https://github.com/jeroen/askpass#readme" target="_blank">https://github.com/jeroen/askpass\#readme</a>            |
+| backports   | <a href="https://github.com/r-lib/backports" target="_blank">https://github.com/r-lib/backports</a>                         |
+| base64enc   | <a href="http://www.rforge.net/base64enc" target="_blank">http://www.rforge.net/base64enc</a>                               |
+| BayesFactor | <a href="https://richarddmorey.github.io/BayesFactor/" target="_blank">https://richarddmorey.github.io/BayesFactor/</a>     |
 
 #### Subset of packages
 

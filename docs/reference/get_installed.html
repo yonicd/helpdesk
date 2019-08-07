@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Function reference • helpdesk</title>
+<title>Return names of installed packages — get_installed • helpdesk</title>
 
 <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
 
@@ -32,7 +32,11 @@
 
 
 
-<meta property="og:title" content="Function reference" />
+<meta property="og:title" content="Return names of installed packages — get_installed" />
+
+<meta property="og:description" content="Returns the names of installed.packages found within the
+location of R library trees that installed.packages searches through." />
+<meta name="twitter:card" content="summary" />
 
 
 
@@ -48,7 +52,7 @@
   </head>
 
   <body>
-    <div class="container template-reference-index">
+    <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -101,48 +105,41 @@
       </header>
 
 <div class="row">
-  <div class="contents col-md-9">
+  <div class="col-md-9 contents">
     <div class="page-header">
-      <h1>Reference</h1>
+    <h1>Return names of installed packages</h1>
+    <small class="dont-index">Source: <a href='https://github.com/yonicd/helpdesk/blob/master/R/utils.R'><code>R/utils.R</code></a></small>
+    <div class="hidden name"><code>get_installed.Rd</code></div>
     </div>
 
-    <table class="ref-index">
+    <div class="ref-description">
+    
+    <p>Returns the names of installed.packages found within the
+location of R library trees that installed.packages searches through.</p>
+    
+    </div>
 
-    <colgroup>
-      
-      <col class="alias" />
-      <col class="title" />
-    </colgroup>
+    <pre class="usage"><span class='fu'>get_installed</span>()</pre>
+        
+    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <tbody>
-      <tr>
-        <th colspan="2">
-          <h2 id="section-all-functions" class="hasAnchor"><a href="#section-all-functions" class="anchor"></a>All functions</h2>
-          <p class="section-desc"></p>
-        </th>
-      </tr>
-      <tr>
-        
-        <td>
-          <p><code><a href="get_installed.html">get_installed()</a></code> </p>
-        </td>
-        <td><p>Return names of installed packages</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="help.pages.html">help.pages()</a></code> </p>
-        </td>
-        <td><p>Locate URL links of Installed Packages</p></td>
-      </tr>
-    </tbody>
-    </table>
+    <p>character</p>
+    
+
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><div class='input'><span class='no'>x</span> <span class='kw'>&lt;-</span> <span class='fu'>get_installed</span>()
+<span class='fu'>nrow</span>(<span class='no'>x</span>)</div><div class='output co'>#&gt; NULL</div><div class='input'><span class='fu'>head</span>(<span class='no'>x</span>)</div><div class='output co'>#&gt; [1] "abind"      "anytime"    "argparser"  "askpass"    "assertthat"
+#&gt; [6] "backports" </div></pre>
   </div>
-
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
-      <li><a href="#section-all-functions">All functions</a></li>
+      
+      <li><a href="#value">Value</a></li>
+      
+      <li><a href="#examples">Examples</a></li>
     </ul>
+
   </div>
 </div>
 

@@ -1,7 +1,7 @@
 Package: helpdesk
 Type: Package
 Title: Query URL links embedded in Installed Packages
-Version: 0.1.0
+Version: 0.1.1
 Description: Query URL links referenced in the DESCRIPTION file of installed
         packages.
 Authors@R: person(given = "Jonathan", family = "Sidi", role = c("cre",'aut'),
